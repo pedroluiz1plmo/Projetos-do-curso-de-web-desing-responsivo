@@ -1,0 +1,45 @@
+* {
+  font-family: "Google Sans Code", monospace;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+
+#title {
+  font-size: 40px;
+  text-align: center;
+}
+
+#description {
+  text-align: center;
+  font-size: 20px;
+}
+
+#img-div {
+  background-color: #6e97ba;
+  margin: 20px;
+  padding: 20px;
+}
+
+#image { 
+  display: block;
+  margin: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+#img-caption {
+  font-size: 10px;
+  text-align: center;
+
+}
+
+#tribute-info {
+  margin: 0 50px 0 50px;
+}
+
+footer {
+  margin: 0 20px 0 20px;
+}
+
