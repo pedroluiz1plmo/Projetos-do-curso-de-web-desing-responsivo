@@ -1,0 +1,60 @@
+<!DOCTYPE = "html">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Projeto-Formulário-styles.css">
+    <title>Projeto Formulário de Pesquisa</title>
+
+</head>
+<body>
+  <header>
+  <h1 id="title"> freeCodeCamp Survey Form </h1>
+  <p id="description">Thank you for taking the time to help us improve the platform</p>
+  </header>
+  <form id="survey-form">
+    <fieldset>
+  <label for="name-label" id="name-label">Name <input id="name" type="text" placeholder="Enter your name" required /></label>
+  <label for="email-label" id="email-label">Email <input id="email" type="email" placeholder="Enter your email" required /></label>
+  <label for="number-label" id="number-label">Age <input id="number" type="number" min="13" max="120" placeholder="enter your age in numbers" /></label>
+
+   <label for="dropdown" >Which option best describes your current role?
+      <select id="dropdown" name="dropdown">
+        <option value="">Select current role</option>
+        <option value="student">Student</option>
+        <option value="idk">IDK</option>
+        <option value="cats">I love cats</option>
+        <option value="other">Other</option>
+      </select>
+    </label>
+    </fieldset>
+<!-- ===========RADIO============ -->
+    <fieldset>
+      Would you recommend freeCodeCamp to a friend?
+      <label for="yes">
+        <input type="radio" name="recommend" id="yes" value="yes">Yes</input>
+      </label>
+      <label for="no">
+        <input type="radio" name="recommend" id="no" value="no">No</input>
+      </label>
+    </fieldset>
+
+<!-- ===========CHECKBOX============ -->
+    <fieldset>
+      <div> What do you want to see improved :
+      <label for="videos">Videos <input id="videos" type="checkbox" name="improved" value="videos" checked /></label>
+      <label for="activities">Activities <input id="activities" type="checkbox" class="inline"   name="improved" value="activities" /></label>
+      <label for="forum">Forum <input id="Forum" type="checkbox"class="inline"  name="improved" value="forum" /></label>
+      </div>
+    </fieldset>
+<!-- ==========TEXTAREA============= -->
+    <fieldset>
+    <label>Comments <br>
+      <textarea id="comments" placeholder="add your comment here"></textarea>
+    </label>
+    </fieldset>  
+<!-- ============SUBMIT============= -->
+    <input type="submit" id="submit" value="Submit" />
+  </form>
+</body>
+</html>
