@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Projeto-Página-Técnica.css">
+    <title>HTML Documentation</title>
+</head>
+
+
+
+<body>
+  <nav id="navbar">
+   <header>C Documetation</header>
+  <ul>
+    <li><a class="nav-link" href="#introduction"> Introduction</a></li>
+    <li><a class="nav-link"  href="#syntax">C Syntax</a></li>
+    <li><a class="nav-link" href="#statements">Statements</a></li>
+    <li><a class="nav-link" href="#m-statements">Many Statements</a> </li>
+    <li><a class="nav-link" href="#output">C Output</a></li> 
+    <li><a class="nav-link" href="#more">More</a></li>
+  </ul>
+  </nav>
+  <main id="main-doc">
+    <section class="main-section" id="introduction">
+      <header>Introduction</header>
+      <article>
+        <p>C is a general-purpose programming language created by Dennis Ritchie at the Bell Laboratories in 1972.
+</p>
+        <p>
+It is a very popular language, despite being old. The main reason for its popularity is because it is a fundamental language in the field of computer science.</p>
+        <p>C is strongly associated with UNIX, as it was developed to write the UNIX operating system.</p>
+        <p>Why learn C?</p>
+        <ul>
+          <li>It is one of the most popular programming languages in the world
+</li>
+          <li>If you know C, you will have no problem learning other popular programming languages such as Java, Python, C++, C#, etc, as the syntax is similar</li>
+          <li>If you know C, you will understand how computer memory works</li>
+          <li>C is very fast, compared to other programming languages, like Java and Python</li>
+          <li>C is very versatile; it can be used in both applications and technologies
+</li>
+        </ul>
+        <div class="code-example">
+        <p>A Simple C Code</p>
+        <code> #include &ltstdio.h> <br><br>
+
+int main() {<br>
+  printf("Hello World!");<br>
+  return 0;<br>
+}
+        </code>
+        </div>
+        <p>Result: </p>
+        <p id="result">Hello World</p>
+        <!-- lembrar de incluir essa id e estilizar ela-->
+      </article>
+    </section>
+
+<!-- separação -->
+
+    <section class="main-section" id="syntax">
+      <header>C Syntax</header>
+      <article>
+        <p>You have already seen the following code a couple of times in the first section. Let's break it down to understand it better:</p>
+        <div class="code-example">
+          <p>Example</p>
+          <code>
+          #include &ltstdio.h><br><br>
+
+int main() {<br>
+  printf("Hello World!");<br>
+  return 0;<br>
+}
+        </code>
+        </div>
+        <p>Explanation</p>
+        <ul>
+          <li>Line 1: <code>#include &ltstdio.h></code> is a header file library that lets us work with input and output functions, such as printf() (used in line 4). Header files add functionality to C programs.</li>
+          <li>Line 2: A blank line. C ignores white space. But we use it to make the code more readable.</li>
+          <li>Line 3: Another thing that always appear in a C program is <code>main()</code>. This is called a function. Any code inside its curly brackets <code>{}</code> will be executed.</li>
+          <li>Line 4: <code>printf()</code> is a function used to output/print text to the screen. In our example, it will output "Hello World!".</li>
+          <li>
+            Line 5: <code>return 0</code> ends the <code>main()</code> function.
+          </li>
+        </ul>
+      </article>
+    </section>
+
+<!-- separação -->
+
+    <section class="main-section" id="statements">
+      <header>Statements</header>
+      <article>
+        <p>A computer program is a list of "instructions" to be "executed" by a computer.
+</p><p>
+In a programming language, these programming instructions are called statements.
+</p><p>
+The following statement "instructs" the compiler to print the text "Hello World" to the screen:</p>
+        <div class="code-example">
+          <p>Example</p>
+          <code>printf("Hello World!");</code>
+        </div>
+        <p>It is important that you end the statement with a semicolon <code>;</code>
+
+If you forget the semicolon (<code>;</code>), an error will occur and the program will not run.</p>
+
+
+      </article>
+    </section>
+    <section class="main-section" id="m-statements">
+      <header>Many Statements</header>
+      <article>
+        <p>Most C programs contain many statements.<br>
+The statements are executed, one by one, in the same order as they are written:</p>
+        <div class="code-example">
+          <code>printf("Hello World!");<br>
+printf("Have a good day!");<br>
+return 0;</code>
+        </div>
+        <p id="explanation">Explanation</p>
+        <p>From the example above, we have three statements:</p>
+        <ul>
+          <li>printf("Hello World!");</li>
+          <li>printf("Have a good day!");</li>
+          <li>return 0;</li>
+        </ul>
+        <p>The first statement is executed first (print "Hello World!" to the screen).<p>
+Then the second statement is executed (print "Have a good day!" to the screen).</p><p>
+And at last, the third statement is executed (end the C program successfully).</p>
+      </article>
+    </section>
+    <section class="main-section" id="output">
+      <header>C Output (Print Text)</header>
+      <p>
+        To output values or print text in C, you can use the <code>printf()</code> function:
+      </p>
+      <div class="code-example">
+        <p>Example</p>
+        <code>#include &ltstdio.h> <br><br>
+
+int main() {<br>
+  printf("Hello World!");<br>
+  return 0;
+}</code>
+      </div>
+      </article>
+      <article>
+      <header>Double Quotes</header>
+      <p>When you are working with text, it must be wrapped inside double quotations marks <code>""</code>.</p>
+<p>
+If you forget the double quotes, an error occurs</p>
+      <div class="code-example">
+        <p>Example</p>
+        <code>printf("This sentence will work!");<br><br>
+printf(This sentence will produce an error.);</code>
+      </div>
+    </section>
+    <section class="main-section" id="more">
+      <header>More</header>
+      <p>All informations from this website was taken from <a href="https://www.w3schools.com/c/c_intro.php" target="_blank">w3schools</a>
+      
+      </section>
+  </main>
+</body>
+
+
+
+</html>
+
